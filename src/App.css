@@ -229,32 +229,29 @@
 .sheet-header,
 .sheet-footer {
   display: flex;
-  justify-content: space-between;
   gap: 4mm;
   align-items: start;
 }
 
 .sheet-header {
-  align-items: stretch;
-  gap: 1.8mm;
+  display: block;
 }
 
 .sheet-header-band {
-  flex: 1;
-  min-width: 0;
   display: flex;
   align-items: center;
-  padding: 1.4mm 2.4mm 1.3mm;
+  width: 100%;
+  padding: 1.5mm 2.2mm 1.4mm;
   border: 1px solid #1f1f1f;
   background: linear-gradient(180deg, #fbfaf4 0%, #f3efe5 100%);
 }
 
 .sheet-title {
   margin: 0;
-  font-size: 3.55mm;
+  font-size: 3.35mm;
   line-height: 1;
   font-weight: 700;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.01em;
   white-space: nowrap;
 }
 
@@ -262,20 +259,6 @@
   margin: 1mm 0 0;
   font-size: 2.9mm;
   color: #444;
-}
-
-.sheet-badge {
-  border: 1px solid #1f1f1f;
-  min-width: 16mm;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.3mm 2.2mm 1.2mm;
-  background: #fff;
-  font-size: 3mm;
-  line-height: 1;
-  font-weight: 700;
-  white-space: nowrap;
 }
 
 .sheet-section {
@@ -297,6 +280,7 @@
 .sheet-item {
   display: grid;
   gap: 1mm;
+  min-width: 0;
   padding-bottom: 1.2mm;
   border-bottom: 1px solid #333;
 }
@@ -310,21 +294,33 @@
   font-size: 3.3mm;
   font-weight: 700;
   min-height: 4.5mm;
+  min-width: 0;
 }
 
 .sheet-item-wide {
   grid-column: 1 / -1;
 }
 
+.pharmacist-line {
+  display: flex;
+  align-items: center;
+  gap: 0.8mm;
+  min-width: 0;
+}
+
+.pharmacist-line strong {
+  flex: 1;
+}
+
 .kakaritsuke-inline {
   font-style: normal;
-  font-size: 2.4mm;
+  font-size: 2.1mm;
   font-weight: 700;
   border: 1px solid #222;
-  padding: 0.2mm 0.8mm;
-  margin-left: 1.2mm;
+  padding: 0.15mm 0.6mm;
   display: inline-block;
   white-space: nowrap;
+  flex: 0 0 auto;
 }
 
 .handwrite-box {

@@ -421,9 +421,6 @@ function App() {
                 <div className="sheet-header-band">
                   <p className="sheet-title">かかりつけ薬剤師・お薬手帳 記載欄</p>
                 </div>
-                <div className="sheet-badge" aria-label="かかりつけ表示">
-                  {settings.kakaritsukeLabel.trim() || 'かかりつけ'}
-                </div>
               </header>
 
               <section className="sheet-section">
@@ -479,12 +476,12 @@ function App() {
                   </div>
                   <div className="sheet-item">
                     <span>薬剤師氏名</span>
-                    <strong>
-                      {settings.pharmacistName || '　　　　　　　　'}{' '}
+                    <div className="pharmacist-line">
+                      <strong>{settings.pharmacistName || '　　　　　　　　'}</strong>
                       <em className="kakaritsuke-inline">
                         {settings.kakaritsukeLabel.trim() || 'かかりつけ'}
                       </em>
-                    </strong>
+                    </div>
                   </div>
                 </div>
               </section>
