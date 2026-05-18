@@ -194,6 +194,11 @@ function App() {
           <p className="printer-copy">
             このPCの `move CL-E300-LFX` に合わせて、初期値は `80 x 115 mm` にしています。
           </p>
+          <div className="safety-note">
+            <strong>このアプリは患者情報を保存しません。</strong>
+            <span>入力した内容はその場の画面表示と印刷にだけ使います。</span>
+            <span>使い終わったら画面を閉じてください。</span>
+          </div>
         </div>
         <div className="intro-actions">
           <button type="button" className="primary" onClick={() => window.print()}>

@@ -56,6 +56,22 @@
   font-weight: 700;
 }
 
+.safety-note {
+  display: grid;
+  gap: 4px;
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-left: 4px solid #2d8e6b;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.72);
+  color: #214234;
+  max-width: 720px;
+}
+
+.safety-note strong {
+  color: #173126;
+}
+
 .intro-actions {
   display: flex;
   gap: 12px;
